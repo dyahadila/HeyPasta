@@ -1,0 +1,395 @@
+/*Overall Styling*/
+body{
+	font-family: Verdana;
+	margin: 0;
+  }
+
+/*Header Styling*/
+header{
+	width:100%;
+	color: black;
+	text-align:center;
+	background-image: url(stripe.png);
+	background-repeat: repeat-x;
+	background-size: 50px 180px;
+	height: 180px;
+	margin:0;
+	padding:0;
+}
+#heypasta{
+	padding-left: 200px;
+	font-family: 'Lobster', cursive;
+	font-size: 70px;
+	margin-top: 20px;
+	display: inline-block;
+	text-align: center;
+}
+#heypasta img{
+	padding-bottom:15px;
+}
+
+#heypasta a{
+	text-decoration:none;
+	color:black;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display:inline-block;
+}
+
+nav li{
+	display: inline;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	text-align:center;
+	margin:auto;
+}
+nav li a{
+	text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li a:hover {
+    text-decoration:underline;
+}
+.fa-shopping-cart{
+	padding-left: -3px;
+}
+.sign:hover{
+	cursor: pointer;
+}
+.sign{
+	float: right;
+	margin-top: 10px;
+	margin-right: 5px;
+	border: none;
+    padding: 8px 15px 8px 15px;
+    background: #F7B733;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+#helloUser{
+	float: right;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+/*Content Styling*/
+
+#content{
+	width:100%;
+	padding:0;
+	margin:0;
+	display: flex;
+	font-family: 'Amita', cursive;
+	text-align: center;
+	font-size: 25px;
+	height: auto;
+	min-height: 480px;     
+}
+#leftContent{
+	width: 65%;
+	float: left;
+}
+#leftContent>p{
+	margin-top:45px;
+}
+#filterform{
+	position: absolute;
+	margin-left: 30px;
+}
+
+#peekTable tr td{
+	font-size: 15px;
+	padding: 0px 10px 20px 10px;
+}
+#peekTable tr td img{
+	border-radius: 5px;
+}
+#peekTable img:hover{
+	cursor: pointer;
+	box-shadow: 5px 5px 3px #ccc;
+    -webkit-box-shadow: 5px 5px 3px #ccc;
+    -moz-box-shadow: 5px 5px 3px #ccc;
+}
+#filter{
+	float: left;
+	display: inline-block;
+}
+#subfilter{
+	margin-top:15px;
+}
+#subfilter:hover{
+	cursor: pointer;
+}
+#searchterm{
+	height: 20px;
+	width: 150px;
+	margin-left: 0;
+}
+#filter select{
+	width: 100px;
+	margin-right: 0;
+}
+#filter label{
+	font-size: 13px;
+}
+#foodtable p{
+	margin-bottom: 0;
+	margin-top: 45px;
+	text-align: center;
+}
+#rightContent{
+	width: 35%;
+	float: right;
+}
+#rightContent p{
+	margin-top: 45px;
+}
+#rightContent td p{
+	margin-top:10px;
+}
+#promoTable {
+	font-family: Verdana;
+	font-size: 12px;
+	color: white;
+}
+#promoTable tr:nth-child(odd){
+	background-color: #34495E;
+}
+#promoTable tr:nth-child(even){
+	color: black;
+}
+#promoTable td {
+	text-align: left;
+	padding: 8px;
+}
+#menuTable{
+	font-size: 12px;
+}
+#menuTable td{
+	padding: 8px;
+}
+.itemName,.dropItem{
+	float: left;
+}
+.itemPrice, .addItem{
+	float: right;
+}
+.nameandprice{
+	clear: both;
+}
+.addanddrop{
+	clear: both;
+}
+.addItem,
+.dropItem{
+	background:#34495E;
+	color: white;
+	box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border:none;
+}
+.addItem,
+.dropItem:hover{
+	cursor: pointer;
+}
+.foodItem{
+	list-style-type: none;
+    border: 1px solid #eee;
+    padding: 3px;
+    border-radius: 5px;
+} 
+.quota{
+	text-align: center;
+	width: 20px;
+}
+#myCart{
+	border-collapse: collapse;
+	font-size:15px;
+	width: 90%;
+}
+#myCart th{
+	border-radius: 5px;
+	border:2px solid white;
+	padding: 5px;
+	padding-left: 10px;
+	margin:3px;
+	background-color: #34495E;
+	color: white;
+	text-align: left;
+}
+#myCart td{
+	height: 40px;
+	padding-left: 10px;
+	text-align: left;
+}
+#myCart a {
+	color: #34495E;
+}
+#checkout{
+	float: right;
+    background: #34495E;
+ 
+}
+#checkout:hover{
+	cursor: pointer;
+}
+#total{
+	float: right;
+	padding-right: 15px;
+}
+#myCart tr:nth-child(even){
+	background-color: #F2F5FA;
+}
+#addToCart{
+	width: 100%;
+}
+
+/*Footer Styling*/
+footer{
+	overflow: hidden;
+	height: 100px;
+	width:100%;
+	display: inline-block;
+	background-color: #dfdce3;
+}
+footer p{
+	font-size: 10px;
+	float: left;
+	color: black;
+	display:block;
+	margin-top:80px;
+	margin-left:15px;
+}
+
+#navbottom{
+	float:right;
+	padding-top: 70px;
+}
+#navbottom ul{
+	padding-right: 10px;
+}
+#navbottom li a{
+	font-size: 12px;
+	text-align:center;
+	display: block;
+	padding:0px 8px 0px 8px;
+}
+#navbottom li:first-child{
+	border-left: none;
+}
+#navbottom li{
+	border-left: 1px solid black;
+}
+#navbottom a:hover{
+	text-decoration: underline;
+}
+/* Modal Styling */
+.modal {
+	display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+}
+
+.modalContent {	
+    background-color: #fefefe;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.modalHeader {
+	font-family: 'Lobster', cursive;
+	font-size: 25px;
+	height: 60px;
+	padding: 2px 16px;
+	text-align: center;
+}
+.modalBody{
+	padding-top: 20px;
+	width: 100%;
+}
+.modalFooter{
+	padding-top: 5px;
+	display: inline-block;
+	font-size: 10px;
+	width: 50%;
+}
+.input-field{
+	margin-bottom: 10px;
+	height: 30px;
+	width: 230px;
+	box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+.input-button {
+	border: none;
+    padding: 8px 15px 8px 15px;
+    background: #F7B733;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+}
+.input-button:hover{
+	cursor: pointer;
+}
+#question{
+	float: left;
+}	
+#signUp{
+	float: right;
+	border-bottom: 1px solid black;
+}
+#signUp:hover{
+	cursor: pointer;
+}
+#signUpModalButton{
+	margin-bottom: 20px;
+}
+.fa-lock{
+	width: 20px;
+}
+.fa-envelope,
+.fa-user,
+.fa-map-marker,
+.fa-phone {
+	width: 20px;
+}
+.fa-times {
+	margin: 5px;
+	padding: 5px;
+	float: right;
+}
+.fa-times:hover,
+.fa-times:focus{
+	cursor: pointer;
+}
